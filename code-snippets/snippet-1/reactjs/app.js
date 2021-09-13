@@ -3,16 +3,18 @@
 import { useState } from 'react';
 
 function App() {
-  const [isUpdated, setIsUpdated] = useState(false);
+  const [outputText, setOutputText] = useState(false);
 
   function updateTextHandler() {
-    setIsUpdated(true);
+    setOutputText('Text was changed!');
   }
 
   return (
     <>
       <button onClick={updateTextHandler}>Click to change text</button>
-      <p>{!isUpdated ? 'Initial text' : 'Text was changed!'}</p>
+      <p>{outputText}</p>
     </>
   );
 }
+
+export default App;
