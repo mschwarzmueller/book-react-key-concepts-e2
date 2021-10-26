@@ -17,7 +17,7 @@ The first approach (classes) isn't really used anymore and exists mainly for his
 
 When using functions, only certain kinds of functions qualify as React components. Specifically, a function must return some "renderable" content like JSX code. 
 
-In addition, when using a custom component function as a component inside of JSX code, developers must use component names that start with an uppercase character (like `<SubmitButton />`). This is required by React to tell custom compnonents apart from built-in components that reflect native HTML elements like `<div>` etc.
+In addition, when using a custom component function as a component inside of JSX code, developers must use component names that start with an uppercase character (like `<SubmitButton />`). This is required by React to tell custom components apart from built-in components that reflect native HTML elements like `<div>` etc.
 
 # 4. Which core rules should you keep in mind regarding JSX elements?
 
@@ -28,7 +28,7 @@ Therefore, a couple of rules are enforced:
 - When using custom components inside of JSX code, these components must start with an uppercase character (e.g. `<SubmitButton>`)
 - In general, `PascalCase` naming should be used for custom component
 - Built-in components that reflect native HTML elements are all-lowercase (like `<p>`)
-- Void elements (like `<img>`) must be self-closing: `<img />` instead of `<img>``
+- Void elements (like `<img>`) must be self-closing: `<img />` instead of `<img>`
 - JSX values are like regular JavaScript values, hence in places, where a single value is expected (e.g. after the `return` keyword), no sibling values are allowed
 
 # 5. How is JSX code handled by React & ReactDOM?
