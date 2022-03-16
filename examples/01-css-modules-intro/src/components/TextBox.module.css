@@ -1,0 +1,13 @@
+.alert {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: salmon;
+  color: red;
+}
+
+.info {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #d6aafa;
+  color: #410474;
+}

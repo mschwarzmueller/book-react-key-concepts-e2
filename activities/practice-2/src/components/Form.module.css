@@ -1,0 +1,49 @@
+.form {
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #eee8f8;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  background-color: #f9f6fc;
+  border: 1px solid #ccc;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: #310485;
+  color: white;
+  border: 1px solid #310485;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #250364;
+}
+
+.label.invalid {
+  font-weight: bold;
+  color: #ce0653;
+}
+
+.input.invalid {
+  background-color: #fcbed6;
+  border-color: #ce0653;
+}
