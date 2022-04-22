@@ -1,0 +1,13 @@
+.preferences {
+  margin-bottom: 1rem;
+}
+
+.preferences label {
+  display: block;
+  line-height: 1.5rem;
+}
+
+.preferences span,
+.preferences input {
+  vertical-align: middle;
+}
