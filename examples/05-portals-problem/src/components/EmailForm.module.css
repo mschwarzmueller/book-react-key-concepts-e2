@@ -1,0 +1,19 @@
+.form {
+  margin: 3rem auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 20rem;
+  border: 1px solid purple;
+  border-radius: 4px;
+}
+
+.form label,
+.form input {
+  display: block;
+  font: inherit;
+  margin-bottom: 0.5rem;
+}
+
+.invalid {
+  color: red;
+}
