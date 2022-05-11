@@ -3,7 +3,7 @@
 Refs can be created via `useRef()` and be used to gain direct access to DOM elements. This can be helpful if you, for example, want to extract (i.e., read) the value entered by a user into an `<input>` element.
 Compared to using state (via `useState()`), refs require a bit less code and hence can lead to leaner components.
 
-2. What is a uncontrolled component?
+2. What is an uncontrolled component?
 
 A component where React is not in direct control of the DOM state. Instead, a ref might be used to read (or even change) a DOM element.
 
