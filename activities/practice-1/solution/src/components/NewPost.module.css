@@ -1,0 +1,34 @@
+.form {
+  width: 20rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  list-style: none;
+  background-color: #586469;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  font: inherit;
+}
+
+.form button {
+  padding: 0.25rem 1rem;
+  background-color: #a4b3e9;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
