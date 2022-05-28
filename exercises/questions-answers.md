@@ -1,4 +1,4 @@
-1. How could you define a side effect?
+1. How would you define a side effect?
 
 A side effect is an action that's not directly working towards the main goal of a function.
 
