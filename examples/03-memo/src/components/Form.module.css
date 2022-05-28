@@ -1,0 +1,26 @@
+.form button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  background-color: #260080;
+  border: 1px solid #260080;
+  color: white;
+  border-radius: 4px;
+}
+
+.control label, 
+.control input {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.control input {
+  font: inherit;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+}

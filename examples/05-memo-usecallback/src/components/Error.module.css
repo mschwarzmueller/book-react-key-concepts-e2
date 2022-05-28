@@ -1,0 +1,17 @@
+.error {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.errorBtn {
+  font-size: 0.5rem;
+  color: #706d6d;
+  background-color: transparent;
+  border: none;
+  padding: 0.25rem 0.4rem;
+  margin-left: 0.5rem;
+  border: 1px solid #706d6d;
+  border-radius: 50%;
+  cursor: pointer;
+}
