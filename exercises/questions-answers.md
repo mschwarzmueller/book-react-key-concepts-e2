@@ -1,4 +1,4 @@
-1. Why does React use a virtual DOM for detecting required DOM updates?
+1. Why does React use a virtual DOM to detect required DOM updates?
 
 If React would reach out to the real DOM in order to calculate required UI updates, a lot of (unnecessary) DOM traversal and read operations would be performed.
 
