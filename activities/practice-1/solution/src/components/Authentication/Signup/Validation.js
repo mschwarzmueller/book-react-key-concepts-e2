@@ -7,12 +7,14 @@ const numberRegex = /\d/;
 const specCharsRegex = /[ `!@#$%^&*()_+\-={};':"\\|,.<>\/?~]/;
 
 function Validation({ email, confirmEmail, password }) {
+  console.log('Evaluating <Validation /> component.');
   const emailsAreValid = email.includes('@') && email === confirmEmail;
 
   const passwordValidityData = useMemo(() => {
     const pwHasMinLength = password.length >= 8;
     const pwHasMinSpecChars = specCharsRegex.test(password);
     const pwHasMinNumbers = numberRegex.test(password);
+    console.log('Validated password.');
     return {
       length: pwHasMinLength,
       specChars: pwHasMinSpecChars,
@@ -25,7 +27,7 @@ function Validation({ email, confirmEmail, password }) {
       <section>
         <h2>Email</h2>
         <ul>
-          <li className={emailsAreValid && classes.valid}>
+          <li className={emailsAreValid ? classes.valid : ''}>
             <span className={classes.icon}>
               {emailsAreValid && <FaCheck />}
             </span>
@@ -36,19 +38,19 @@ function Validation({ email, confirmEmail, password }) {
       <section>
         <h2>Password</h2>
         <ul>
-          <li className={passwordValidityData.length && classes.valid}>
+          <li className={passwordValidityData.length ? classes.valid : ''}>
             <span className={classes.icon}>
               {passwordValidityData.length && <FaCheck />}
             </span>
             <span>At least 8 characters long</span>
           </li>
-          <li className={passwordValidityData.numbers && classes.valid}>
+          <li className={passwordValidityData.numbers ? classes.valid : ''}>
             <span className={classes.icon}>
               {passwordValidityData.numbers && <FaCheck />}
             </span>
             <span>Contains at least one number</span>
           </li>
-          <li className={passwordValidityData.specChars && classes.valid}>
+          <li className={passwordValidityData.specChars ? classes.valid : ''}>
             <span className={classes.icon}>
               {passwordValidityData.specChars && <FaCheck />}
             </span>
