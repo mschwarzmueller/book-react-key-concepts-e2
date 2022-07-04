@@ -1,0 +1,40 @@
+.form {
+  margin: 5rem auto;
+  width: 30rem;
+  background-color: #e6e5e8;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.form button {
+  cursor: pointer;
+  font: inherit;
+  background-color: #420492;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.control {
+  margin-bottom: 1rem;
+}
+
+.control label,
+.control input {
+  display: block;
+  width: 100%;
+}
+
+.control label {
+  font-weight: bold;
+  color: #4d4c4f;
+  margin-bottom: 0.25rem;
+}
+
+.control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #bbb9bd
+}

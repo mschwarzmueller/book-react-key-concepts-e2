@@ -1,0 +1,54 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cart {
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 20rem);
+  width: 40rem;
+  padding: 1.5rem;
+  background-color: #fdf1e6;
+  border-radius: 8px;
+}
+
+.cart h2 {
+  margin: 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #fdd4ab;
+  color: #2f2d2b;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.actions button:hover {
+  font: inherit;
+  cursor: pointer;
+  background-color: #f8c897;
+  color: #2f2d2b;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}

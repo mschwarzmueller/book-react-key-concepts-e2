@@ -1,0 +1,8 @@
+.sidebar {
+  position: fixed;
+  top: 8rem;
+  right: 0;
+  width: 15rem;
+  height: calc(100vh - 8rem);
+  padding: 2rem;
+}

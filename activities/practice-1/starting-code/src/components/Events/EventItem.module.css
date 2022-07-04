@@ -1,0 +1,50 @@
+.event {
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.event img {
+  object-fit: cover;
+  border-radius: 14px;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h2 {
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  background: #63615e;
+  color: white;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #fdd4ab;
+  color: #2f2d2b;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.actions button:hover {
+  background-color: #fbbf82;
+}

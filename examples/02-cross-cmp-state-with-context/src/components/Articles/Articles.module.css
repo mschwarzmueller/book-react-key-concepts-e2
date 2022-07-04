@@ -1,0 +1,27 @@
+.list {
+  margin: 3rem 0;
+}
+
+.list li {
+  position: relative;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #e3e3dd;
+  border-radius: 8px;
+}
+
+.list li button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #3b2605;
+}
