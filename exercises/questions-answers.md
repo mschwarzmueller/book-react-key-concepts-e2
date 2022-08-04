@@ -1,4 +1,4 @@
-# 1. What is a custom Hook technically?
+# 1. What is the definition of a custom Hook?
 
 A custom Hook is a regular JavaScript function. It becomes a custom Hook by adding `use` as a prefix to the function name.
 Without that prefix, React would produce an error as soon as you tried to use another Hook in that function.
