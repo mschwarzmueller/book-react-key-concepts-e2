@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 40rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ccc;
+  width: 40rem;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  width: 9rem;
+  display: inline-block;
+  text-align: center;
+  color: #6d6674;
+}
+
+.active {
+  font-weight: bold;
+  color: #35224a;
+}

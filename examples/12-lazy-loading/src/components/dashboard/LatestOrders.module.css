@@ -1,0 +1,35 @@
+.button {
+  text-decoration: none;
+  text-align: center;
+  color: #423f44;
+  border: 1px solid #6e6a70;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:active {
+  background-color: #dedbe0;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.item h2 {
+  margin: 0;
+  color: #434146;
+  font-size: 1.15rem;
+}
+
+.item p {
+  margin: 0;
+  color: #434146;
+  border-radius: 4px;
+}

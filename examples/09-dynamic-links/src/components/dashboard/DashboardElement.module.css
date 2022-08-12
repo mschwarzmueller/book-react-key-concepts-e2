@@ -1,0 +1,13 @@
+.element {
+  padding: 2rem;
+  background-color: #e6e5e8;
+  border-radius: 6px;
+}
+
+.element > h2 {
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+  color: #5a555e;
+  text-transform: uppercase;
+  font-size: 1rem;
+}

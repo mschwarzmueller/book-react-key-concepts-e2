@@ -1,0 +1,56 @@
+.title {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 0.5rem 0;
+  color: #434146;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.badge {
+  font-size: 1rem;
+  color: #434146;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.shipped {
+  background-color: #91f7c2;
+}
+
+.pending {
+  background-color: #adedf8;
+}
+
+.delayed {
+  background-color: #f8bdad;
+}
+
+.meta {
+  color: #737078;
+  font-weight: bold;
+}
+
+.products {
+  border-top: 2px solid #ccc;
+  padding-top: 1rem;
+}
+
+.products li {
+  background-color: #b2afb7;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.products li h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #29272b;
+}
+
+.products li p {
+  margin: 0;
+  color: #434146;
+}
