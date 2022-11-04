@@ -1,4 +1,4 @@
-# 1. How is data fetching & submission related to routing?
+# 1. How are data fetching & submission related to routing?
 
 It's very common to fetch data as a new page is loaded. Similarily, it's very common to change the page after committing some action (e.g., after sending a request). Hence it makes sense to combine these tasks with routing. 
 
