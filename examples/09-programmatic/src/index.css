@@ -1,0 +1,104 @@
+body {
+  margin: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  text-align: center;
+}
+
+.posts,
+#post-details {
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.posts li {
+  margin: 0.5rem 0;
+}
+
+#posts-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+#posts-layout nav {
+  border-right: 2px solid #ccc;
+  padding-right: 2rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(229, 229, 229);
+  color: rgb(34, 32, 32);
+  border-radius: 4px;
+}
+
+.main-nav a.active {
+  background-color: #b6b6b6;
+}
+
+#post-details {
+  text-align: left;
+}
+
+#post-form {
+  max-width: 25rem;
+  text-align: left;
+}
+
+#post-form input,
+#post-form textarea {
+  font: inherit;
+  width: 100%;
+}
+
+#post-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #3c3c3c;
+}
+
+#post-form button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #3c3c3c;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+#post-form button:disabled {
+  background-color: #cccccc;
+  color: #9c9c9c;
+  cursor: not-allowed;
+}
+
+#post-form ul {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  color: red;
+}

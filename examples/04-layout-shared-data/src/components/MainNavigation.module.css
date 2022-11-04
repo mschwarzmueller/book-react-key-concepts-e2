@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 0;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  background-color: #ccc;
+  color: rgb(34, 32, 32);
+  border-radius: 4px;
+}
