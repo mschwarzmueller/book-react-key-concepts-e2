@@ -3,7 +3,7 @@ import { Form, redirect } from 'react-router-dom';
 import Modal from '../components/Modal';
 import { addTodo } from '../data/todos';
 
-function NewTodoPage() {
+function NewTodo() {
   return (
     <Modal>
       <Form method="post">
@@ -19,7 +19,7 @@ function NewTodoPage() {
   );
 }
 
-export default NewTodoPage;
+export default NewTodo;
 
 export async function action({ request }) {
   const formData = await request.formData();

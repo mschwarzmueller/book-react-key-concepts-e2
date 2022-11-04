@@ -3,12 +3,12 @@ import { Form, redirect, useLoaderData } from 'react-router-dom';
 import Modal from '../components/Modal';
 import { deleteTodo, getTodo, updateTodo } from '../data/todos';
 
-function SelectedTodoPage() {
+function SelectedTodo() {
   const todo = useLoaderData();
 
   return (
     <Modal>
-      <Form method="post">
+      <Form method="patch">
         <p>
           <label htmlFor="text">Your todo</label>
           <input type="text" id="text" name="text" defaultValue={todo.text} />
@@ -26,7 +26,7 @@ function SelectedTodoPage() {
   );
 }
 
-export default SelectedTodoPage;
+export default SelectedTodo;
 
 export async function loader({ params }) {
   return getTodo(params.id);
@@ -35,7 +35,7 @@ export async function loader({ params }) {
 export async function action({ request, params }) {
   const todoId = params.id;
 
-  if (request.method === 'POST') {
+  if (request.method === 'PATCH') {
     const formData = await request.formData();
     const enteredText = formData.get('text');
     updateTodo(todoId, enteredText);

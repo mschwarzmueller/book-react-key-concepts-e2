@@ -2,7 +2,7 @@ import { Link, Outlet, useLoaderData } from 'react-router-dom';
 
 import { getTodos } from '../data/todos';
 
-function TodosPage() {
+function Todos() {
   const todos = useLoaderData();
 
   let content = (
@@ -44,7 +44,7 @@ function TodosPage() {
   );
 }
 
-export default TodosPage;
+export default Todos;
 
 export function loader() {
   return getTodos();
