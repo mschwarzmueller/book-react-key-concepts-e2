@@ -72,16 +72,16 @@ function App() {
 
   return (
     <>
-      {modalData && <div className='backdrop' onClick={closeModal}></div>}
+      {modalData && <div className="backdrop" onClick={closeModal}></div>}
       {modalData && (
-        <aside className='modal'>
+        <aside className="modal">
           <header>
             <h2>{modalData.title}</h2>
           </header>
           <section>
             <p>{modalData.message}</p>
           </section>
-          <section className='modal__actions'>
+          <section className="modal__actions">
             <button onClick={closeModal}>Okay</button>
           </section>
         </aside>
@@ -91,20 +91,20 @@ function App() {
       </header>
       <main>
         <form onSubmit={submitFormHandler}>
-          <div className='form-control'>
-            <label htmlFor='email'>Email</label>
+          <div className="form-control">
+            <label htmlFor="email">Email</label>
             <input
-              type='email'
-              id='email'
+              type="email"
+              id="email"
               onBlur={validateInputHandler.bind(null, 'email')}
             />
             {!emailIsValid && <p>This email is already taken!</p>}
           </div>
-          <div className='form-control'>
-            <label htmlFor='password'>Password</label>
+          <div className="form-control">
+            <label htmlFor="password">Password</label>
             <input
-              type='password'
-              id='password'
+              type="password"
+              id="password"
               onBlur={validateInputHandler.bind(null, 'password')}
             />
             {!passwordIsValid && (
