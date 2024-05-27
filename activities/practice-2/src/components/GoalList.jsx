@@ -1,6 +1,6 @@
-import FirstGoal from './FirstGoal';
-import SecondGoal from './SecondGoal';
-import ThirdGoal from './ThirdGoal';
+import FirstGoal from './FirstGoal.jsx';
+import SecondGoal from './SecondGoal.jsx';
+import ThirdGoal from './ThirdGoal.jsx';
 
 function GoalList() {
   return (
