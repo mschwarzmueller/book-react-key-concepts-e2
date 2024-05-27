@@ -3,9 +3,7 @@ function GoalItem(props) {
     <li>
       <article>
         <h2>{props.title}</h2>
-        <p>
-          {props.children}
-        </p>
+        <p>{props.children}</p>
       </article>
     </li>
   );

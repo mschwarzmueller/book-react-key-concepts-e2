@@ -1,4 +1,4 @@
-import GoalItem from './GoalItem';
+import GoalItem from './GoalItem.jsx';
 
 function GoalList() {
   return (
