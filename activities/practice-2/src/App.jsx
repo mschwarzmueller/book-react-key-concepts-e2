@@ -1,27 +1,27 @@
 import { useState } from 'react';
 
-import Calculation from './components/Calculation';
-import Result from './components/Result';
+import Calculation from './components/Calculation.jsx';
+import Result from './components/Result.jsx';
 
 function App() {
   const [enteredNumbers, setEnteredNumbers] = useState({ first: 0, second: 0 });
   const [chosenOperation, setChosenOperation] = useState('add'); // valid values: 'add', 'subtract', 'multiply', 'divide'
 
-  function changeFirstNumberHandler(event) {
+  function handleChangeFirstNumber(event) {
     setEnteredNumbers((prevNumbers) => ({
       first: +event.target.value,
       second: prevNumbers.second,
     }));
   }
 
-  function changeSecondNumberHandler(event) {
+  function handleChangeSecondNumber(event) {
     setEnteredNumbers((prevNumbers) => ({
       first: prevNumbers.first,
       second: +event.target.value,
     }));
   }
 
-  function updateOperationHandler(event) {
+  function handleUpdateOperation(event) {
     setChosenOperation(event.target.value);
   }
 
@@ -40,9 +40,9 @@ function App() {
   return (
     <>
       <Calculation
-        onFirstNumberChanged={changeFirstNumberHandler}
-        onSecondNumberChanged={changeSecondNumberHandler}
-        onOperationChanged={updateOperationHandler}
+        onFirstNumberChanged={handleChangeFirstNumber}
+        onSecondNumberChanged={handleChangeSecondNumber}
+        onOperationChanged={handleUpdateOperation}
       />
       <Result calculationResult={result} />
     </>

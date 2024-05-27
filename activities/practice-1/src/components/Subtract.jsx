@@ -3,14 +3,14 @@ import { useState } from 'react';
 function Subtract() {
   const [enteredNumbers, setEnteredNumbers] = useState({ first: 0, second: 0 });
 
-  function changeFirstNumberHandler(event) {
+  function handleChangeFirstNumber(event) {
     setEnteredNumbers((prevNumbers) => ({
       first: +event.target.value,
       second: prevNumbers.second,
     }));
   }
 
-  function changeSecondNumberHandler(event) {
+  function handleChangeSecondNumber(event) {
     setEnteredNumbers((prevNumbers) => ({
       first: prevNumbers.first,
       second: +event.target.value,
@@ -21,8 +21,8 @@ function Subtract() {
 
   return (
     <p>
-      <input type="number" onChange={changeFirstNumberHandler} /> -{' '}
-      <input type="number" onChange={changeSecondNumberHandler} /> = {result}
+      <input type="number" onChange={handleChangeFirstNumber} /> -{' '}
+      <input type="number" onChange={handleChangeSecondNumber} /> = {result}
     </p>
   );
 }
