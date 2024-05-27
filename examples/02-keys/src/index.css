@@ -1,25 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-  margin: 32px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0;
+  padding: 3rem;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #f2f8f8;
+  color: #151818;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 35rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #494e4f;
+  color: white;
+  border: 1px solid #181818;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 input {
-  margin: 0 12px;
+  padding: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  border: 1px solid #181818;
+  border-radius: 4px;
+}
+
+button {
+  align-self: center;
+  background-color: #fde681;
+  border: 1px solid #fde681;
+  color: #181818;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fdc381;
+  border-color: #fdc381;
+  color: #181818;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
+  list-style-type: none;
   padding: 0;
+  margin: 3rem 0;
 }
 
 li {
-  margin: 8px 0;
-  padding: 8px;
-  border: 1px solid #ccc;
-  max-width: 320px;
+  max-width: 20rem;
+  padding: 1rem;
+  border: 1px solid #181818;
+  background-color: #e8e7e0;
+  margin: 0.5rem auto;
+  border-radius: 4px;
 }
