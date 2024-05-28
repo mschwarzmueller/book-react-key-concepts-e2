@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #201f24;
+  color: white;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  background-color: transparent;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.btn div {
+  width: 2.5rem;
+  height: 3px;
+  border-radius: 20px;
+  background-color: white;
+}
