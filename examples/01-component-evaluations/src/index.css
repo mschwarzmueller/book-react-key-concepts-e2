@@ -7,29 +7,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  margin: 0.5rem 0 ;
+}
+
+button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
 }
 
 #parent,
 #child,
 #nested-child {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 2px solid black;
 }
 
 #parent {
-  background-color: #b7b3bd;
+  background-color: #e9e6ed;
 }
 
 #child {
-  background-color: #6c6871;
-  color: white;
+  background-color: #b7b4ba;
 }
 
 #nested-child {
-  background-color: #403d43;
+  background-color: #39373b;
   color: white;
 }
