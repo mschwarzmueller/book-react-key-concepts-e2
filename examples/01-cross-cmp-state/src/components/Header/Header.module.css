@@ -1,8 +1,4 @@
 .header {
-  width: 100%;
-  height: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f3df91;
+  width: 50rem;
+  margin: auto;
 }
