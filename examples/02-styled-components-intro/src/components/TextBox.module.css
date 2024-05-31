@@ -1,8 +1,8 @@
 .alert {
   padding: 1rem;
   border-radius: 6px;
-  background-color: rgb(249, 188, 181);
-  color: rgb(72, 12, 12);
+  background-color: salmon;
+  color: red;
 }
 
 .info {

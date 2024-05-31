@@ -17,5 +17,5 @@ If styles were scoped to a component, they would not do that. Out of the box, st
 
 # 5. How could styles be scoped to components? Briefly explain at least one concept that helps with scoping.
 
-Different approaches and third-party libraries can help with scoping. One popular approach, that's supported by projects created via `create-react-app` by default, is the usage of CSS Modules.
+Different approaches and third-party libraries can help with scoping. One popular approach, that's supported by projects created via Vite by default, is the usage of CSS Modules.
 When using CSS Modules, class names get transformed to unique class names during the build process. Therefore, every component has its own, unique class names which can't clash with similar class names defined elsewhere.

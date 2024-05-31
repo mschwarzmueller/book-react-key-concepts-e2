@@ -1,19 +1,21 @@
 import { useState } from 'react';
 
+import classes from './Form.module.css';
+
 function Form() {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [emailIsValid, setEmailIsValid] = useState(true);
   const [enteredPassword, setEnteredPassword] = useState('');
   const [passwordIsValid, setPasswordIsValid] = useState(true);
 
-  function changeEmailHandler(event) {
+  function handleChangeEmail(event) {
     setEnteredEmail(event.target.value);
   }
-  function changePasswordHandler(event) {
+  function handleChangePassword(event) {
     setEnteredPassword(event.target.value);
   }
 
-  function submitFormHandler(event) {
+  function handleSubmitForm(event) {
     event.preventDefault();
 
     const emailIsValid = enteredEmail.includes('@');
@@ -31,30 +33,52 @@ function Form() {
   }
 
   return (
-    <form onSubmit={submitFormHandler}>
+    <form className={classes.form} onSubmit={handleSubmitForm}>
       <div>
-        <label htmlFor="email" className={!emailIsValid && 'invalid'}>
+        <label
+          htmlFor="email"
+          className={
+            !emailIsValid
+              ? `${classes.label} ${classes.invalid}`
+              : classes.label
+          }
+        >
           Your email
         </label>
         <input
           id="email"
           type="email"
-          onChange={changeEmailHandler}
-          className={!emailIsValid && 'invalid'}
+          onChange={handleChangeEmail}
+          className={
+            !emailIsValid
+              ? `${classes.input} ${classes.invalid}`
+              : classes.input
+          }
         />
       </div>
       <div>
-        <label htmlFor="password" className={!passwordIsValid && 'invalid'}>
+        <label
+          htmlFor="password"
+          className={
+            !passwordIsValid
+              ? `${classes.label} ${classes.invalid}`
+              : classes.label
+          }
+        >
           Your password
         </label>
         <input
           id="password"
           type="password"
-          onChange={changePasswordHandler}
-          className={!passwordIsValid && 'invalid'}
+          onChange={handleChangePassword}
+          className={
+            !passwordIsValid
+              ? `${classes.input} ${classes.invalid}`
+              : classes.input
+          }
         />
       </div>
-      <button>Submit</button>
+      <button className={classes.button}>Submit</button>
     </form>
   );
 }
