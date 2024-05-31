@@ -4,7 +4,7 @@ The context API helps with managing cross-component state. It can simplify this 
 
 # 2. Which three main steps have to be taken, when using the context API?
 
-You have to create the context, provide it (via the `Provider` component) and use it via `useReducer()`. When providing the context, the value has to be set with help of the `value` prop of the `Provider` component.
+You have to create the context, provide it (via context object, which is a component) and use it via `use()`. When providing the context, the value has to be set with help of the `value` prop of the context component.
 
 # 3. When might `useReducer()` be preferred over `useState()`?
 
