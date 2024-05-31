@@ -37,23 +37,26 @@ function httpReducer(state, action) {
 function useFetch(url) {
   const [httpState, dispatch] = useReducer(httpReducer, initialHttpState);
 
-  const fetchPosts = useCallback(async function fetchPosts() {
-    dispatch({ type: 'FETCH_START' });
+  const fetchPosts = useCallback(
+    async function fetchPosts() {
+      dispatch({ type: 'FETCH_START' });
 
-    try {
-      const response = await fetch(url);
+      try {
+        const response = await fetch(url);
 
-      if (!response.ok) {
-        throw new Error('Failed to fetch posts.');
+        if (!response.ok) {
+          throw new Error('Failed to fetch posts.');
+        }
+
+        const posts = await response.json();
+
+        dispatch({ type: 'FETCH_SUCCESS', payload: posts });
+      } catch (error) {
+        dispatch({ type: 'FETCH_ERROR', payload: error.message });
       }
-
-      const posts = await response.json();
-
-      dispatch({ type: 'FETCH_SUCCESS', payload: posts });
-    } catch (error) {
-      dispatch({ type: 'FETCH_ERROR', payload: error.message });
-    }
-  }, [url]);
+    },
+    [url]
+  );
 
   useEffect(
     function () {
