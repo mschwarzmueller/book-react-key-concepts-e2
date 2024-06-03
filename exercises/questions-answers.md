@@ -4,11 +4,11 @@ Routing **is** about loading content conditionally. But you don't load content c
 
 Instead of listening to such path changes manually, you typically use a routing library like the React Router library. This package then detects URL path changes and loads the appropriate content (based on your route definitions).
 
-# 2. What’s the purpose of the `Routes` and `Route` components?
+# 2. How are routes defined?
 
-`Routes` is used to group multiple route definitions together. Whenever the URL path changes, `Routes` looks through all its children (i.e., through the `Route` components) to check whether any route should be activated.
+You define routes by creating a router (via `createBrowserRouter()` and `<RouterProvider>`) and passing an array of route definitions to `createBrowserRouter()`.
 
-`Route` is used to define an individual route. Every `Route` takes a `path` prop which defines the URL path for which the route should become active. It also takes an `element` prop which sets the content that should be displayed once the route is active.
+Each route definition typically includes a `path` (e.g., `/orders`) and an `element` (e.g., `<Orders />`) that should be rendered for that path.
 
 # 3. How should you add links to different routes to your pages?
 

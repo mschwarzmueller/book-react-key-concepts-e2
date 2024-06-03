@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #c0bcc3;
+}
+
+.summary {
+  color: #777479;
+  text-transform: uppercase;
+  font-weight: bold;
+}

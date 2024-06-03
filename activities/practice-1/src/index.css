@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f1f0f2;
+  background-color: #f9f7fa;
   text-align: center;
   color: #323035;
 }
@@ -28,17 +28,21 @@ body {
 
 #main-nav a {
   text-decoration: none;
-  font-size: 1.25rem;
-  color: #7300ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c2a2d;
   padding: 0.25rem 1.5rem;
-  width: 12rem;
   display: inline-block;
   text-align: center;
+  padding: 0.75rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 #main-nav a:hover,
-.active {
-  background-color: #e7dbf6;
+#main-nav .active {
+  background-color: #ffffff;
+  border-color: #2c2a2d;
   border-radius: 4px;
 }
 
@@ -59,10 +63,23 @@ body {
   color: inherit;
 }
 
+#product-detail {
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#product-detail h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
 #product-price {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #535056;
   font-weight: bold;
+  margin: 0.5rem 0;
 }
 
 h1 {
@@ -70,7 +87,7 @@ h1 {
 }
 
 main {
-  max-width: 30rem;
+  max-width: 35rem;
   margin: 2rem auto;
 }
 
@@ -83,3 +100,4 @@ ul {
 a {
   color: #7300ff;
 }
+

@@ -11,3 +11,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1f0f2;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  color: #007bff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #0056b3;
+}
