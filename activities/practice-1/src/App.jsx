@@ -2,8 +2,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Root from './routes/Root.jsx';
 import Welcome from './routes/Welcome.jsx';
-import Products from './routes/Products.jsx';
-import ProductDetail from './routes/ProductDetail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -11,8 +9,11 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       { index: true, element: <Welcome /> },
-      { path: '/products', element: <Products /> },
-      { path: '/products/:id', element: <ProductDetail /> },
+      { path: '/products', lazy: () => import('./routes/Products.jsx') },
+      {
+        path: '/products/:id',
+        lazy: () => import('./routes/ProductDetail.jsx'),
+      },
     ],
   },
 ]);

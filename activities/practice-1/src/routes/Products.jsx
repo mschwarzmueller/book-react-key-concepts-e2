@@ -19,4 +19,4 @@ function Products() {
   );
 }
 
-export default Products;
+export const Component = Products;

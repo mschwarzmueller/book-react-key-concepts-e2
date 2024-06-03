@@ -16,4 +16,4 @@ function ProductDetail() {
   );
 }
 
-export default ProductDetail;
+export const Component = ProductDetail;
