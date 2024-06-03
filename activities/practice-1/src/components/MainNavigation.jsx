@@ -6,20 +6,10 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              Home
-            </NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink
-              to="/products"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              Browse Products
-            </NavLink>
+            <NavLink to="/products">Browse Products</NavLink>
           </li>
         </ul>
       </nav>
