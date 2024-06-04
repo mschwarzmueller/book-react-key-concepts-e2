@@ -8,7 +8,7 @@ function SelectedTodo() {
 
   return (
     <Modal>
-      <Form method="patch">
+      <Form method="post">
         <p>
           <label htmlFor="text">Your todo</label>
           <input type="text" id="text" name="text" defaultValue={todo.text} />
@@ -17,9 +17,10 @@ function SelectedTodo() {
           <button>Update Todo</button>
         </p>
       </Form>
-      <Form method="delete">
+      <Form method="post">
+        <input type="hidden" name="_method" value="DELETE" />
         <p className="form-actions">
-          <button className='btn-alt'>Delete Todo</button>
+          <button className="btn-alt">Delete Todo</button>
         </p>
       </Form>
     </Modal>
@@ -34,14 +35,15 @@ export async function loader({ params }) {
 
 export async function action({ request, params }) {
   const todoId = params.id;
+  const formData = await request.formData();
+  const method = formData.get('_method');
 
-  if (request.method === 'PATCH') {
-    const formData = await request.formData();
+  if (method !== 'DELETE') {
     const enteredText = formData.get('text');
     updateTodo(todoId, enteredText);
   }
 
-  if (request.method === 'DELETE') {
+  if (method === 'DELETE') {
     deleteTodo(todoId);
   }
   return redirect('/');
