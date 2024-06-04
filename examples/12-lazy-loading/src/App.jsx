@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Dashboard /> },
       { path: '/orders', lazy: () => import('./routes/Orders.jsx') },
-      { path: '/orders/:id', lazy: () => import('./routes/Orders.jsx') },
+      { path: '/orders/:id', lazy: () => import('./routes/OrderDetail.jsx') },
     ],
   },
 ]);
