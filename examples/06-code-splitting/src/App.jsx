@@ -1,7 +1,7 @@
 import { lazy, Suspense, useState } from 'react';
 
-import DateCalculator from './components/DateCalculator.jsx';
-// const DateCalculator = lazy(() => import('./components/DateCalculator.jsx'));
+// import DateCalculator from './components/DateCalculator.jsx';
+const DateCalculator = lazy(() => import('./components/DateCalculator.jsx'));
 
 function App() {
   const [showDateCalc, setShowDateCalc] = useState(false);
@@ -18,10 +18,10 @@ function App() {
         between two dates.
       </p>
       <button onClick={handleOpenDateCalc}>Open Calculator</button>
-      {/* <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<p>Loading...</p>}>
         {showDateCalc && <DateCalculator />}
-      </Suspense> */}
-      {showDateCalc && <DateCalculator />}
+      </Suspense>
+      {/* {showDateCalc && <DateCalculator />} */}
     </>
   );
 }
