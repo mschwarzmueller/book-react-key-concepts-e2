@@ -26,12 +26,12 @@ To the user, it might seem like they are navigating different pages but technica
 
 You can even listen to changes in the page path to update the DOM based on path changes - this increases the "multi page feeling". When working with React, the [react-router](https://www.npmjs.com/package/react-router) package is the most popular package for listening to such path changes and updating the UI based on any changes.
 
-# 5. How can you create new React projects and why do you need such a more complex project setup?
+# 5. How can you create new React projects and why do you need such a complex project setup?
 
-New React projects can be created in different ways but one of the most popular and easiest ways of setting up a new React project is to use the [create-react-app tool](https://reactjs.org/docs/create-a-new-react-app.html).
+New React projects can be created in different ways but one of the most popular and easiest ways of setting up a new React project is to use the [Vite tool](https://vitejs.dev/).
 
 This is a tool which you can use to scaffold new React projects which already have all the packages (like `react` and `react-dom`) that are needed to build web projects with React. In addition, those projects also come with some code transformation tools and a workflow that enables the usage of special features like *JSX code* (markup code for React apps).
 
-New projects can be created with that tool by running `npx create-react-app project-name`.
+New projects can be created with that tool by running `npm create vite@latest project-name`.
 
-These projects also provide a development server which can be started via `npm start` to preview the React web app locally and get live updates as you make code changes.
+These projects also provide a development server which can be started via `npm run dev` to preview the React web app locally and get live updates as you make code changes.
