@@ -26,7 +26,7 @@ When working with JSX code, it is important to keep in mind that JSX is neither 
 Therefore, a couple of rules are enforced:
 
 - When using custom components inside of JSX code, these components must start with an uppercase character (e.g. `<SubmitButton>`)
-- In general, `PascalCase` naming should be used for custom component
+- In general, `PascalCase` naming should be used for custom components
 - Built-in components that reflect native HTML elements are all-lowercase (like `<p>`)
 - Void elements (like `<img>`) must be self-closing: `<img />` instead of `<img>`
 - JSX values are like regular JavaScript values, hence in places, where a single value is expected (e.g. after the `return` keyword), no sibling values are allowed
