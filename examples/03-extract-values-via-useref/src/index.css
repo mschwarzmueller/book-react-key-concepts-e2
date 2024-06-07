@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#bebfc2, #d7dadc);
+  color: #1c1c1d;
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  margin: 2rem 0;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+header img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+form {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 30rem;
+  background: #ecedef;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+  margin: 0; 
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: #4b4b4d;
+}
+
+form input {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #8e8e91;
+  background-color: #e6e6e8;
+  border-radius: 5px;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  font: inherit;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  background: #1c1c1d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #111112;
+}

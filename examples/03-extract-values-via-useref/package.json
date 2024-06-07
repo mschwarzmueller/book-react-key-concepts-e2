@@ -1,0 +1,19 @@
+{
+  "name": "01-form-submission-without-actions",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0-rc-eb259b5d3b-20240605",
+    "react-dom": "^19.0.0-rc-eb259b5d3b-20240605"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.0"
+  }
+}
