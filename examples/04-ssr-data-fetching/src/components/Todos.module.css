@@ -1,0 +1,79 @@
+.todos {
+  width: 90%;
+  max-width: 30rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: #f4f2f2;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todos form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.todos label {
+  font-family: 'Rubik', sans-serif;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #393737;
+}
+
+.todos input {
+  flex: 2;
+  font-family: 'Rubik', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.todos button {
+  flex: 1;
+  font-family: 'Rubik', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.todos button:hover {
+  background-color: #333333;
+}
+
+.fallback {
+  margin: 2rem auto;
+  font-size: 1.15rem;
+}
+
+.todos ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.todos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: normal;
+  font-family: 'Popins', sans-serif;
+  text-align: left;
+  text-transform: capitalize;
+}
