@@ -11,7 +11,7 @@ You can also "abuse" the JavaScript logical "and" operator (`&&`). Ternary epxre
 
 # 3. Which elegant approach can be used to define element tags conditionally?
 
-You can store the desired element type in a (conditionally set) variable. Built-in components like `<p>` or `<a>` can be store by storing the tag names (`p` or `a`) in variables. Custom components can be stored by storing a pointer at the custom component function.
+You can store the desired element type in a (conditionally set) variable. Built-in components like `<p>` or `<a>` can be stored by storing the tag names (`p` or `a`) in variables. Custom components can be stored by storing a pointer at the custom component function.
 
 # 4. What's a potential downside of using only ternary expressions (for conditional content)?
 
