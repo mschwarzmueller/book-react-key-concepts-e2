@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function Cart() {
+export default function Cart({ children }) {
   const [isVisible, setIsVisible] = useState(false);
 
   function handleCartVisibility() {
@@ -14,7 +14,7 @@ export default function Cart() {
       <button onClick={handleCartVisibility}>
         {isVisible ? 'Hide Cart' : 'Show Cart'}
       </button>
-      {isVisible && <p>Cart Items</p>}
+      {isVisible && <ul>{children}</ul>}
     </div>
   );
 }

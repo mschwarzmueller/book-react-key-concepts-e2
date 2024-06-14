@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ccc;
+  color: #292828;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  width: 50rem;
+  text-align: center;
+  margin: 3rem auto 1.5rem auto;
+  border-bottom: 5px solid #292828;
+}
+
+a {
+  color: #3f10da;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6f45f7;
+}
+
+form {
+  max-width: 25rem;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+form p {
+  margin: 0;
+}
+
+label {
+  display: block;
+  font-size: 0.65rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: #4a4949;
+  text-transform: uppercase;
+}
+
+textarea {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 2px;
+  border: 1px solid #292828;
+  background-color: #e3e3e3;
+}
+
+form p:has(button) {
+  text-align: right;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #292828;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0d0d0d;
+}
+
+#error {
+  background-color: #fed2d7;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: #44041d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  max-width: 50rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: #e2e1e1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#fallback {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3rem auto;
+}
