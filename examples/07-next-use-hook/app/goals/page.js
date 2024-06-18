@@ -9,12 +9,11 @@ async function fetchGoals() {
   return JSON.parse(goals);
 }
 
-export default async function GoalsPage() {
+export default function GoalsPage() {
   const fetchGoalsPromise = fetchGoals();
   return (
     <>
       <h1>Top User Goals</h1>
-
       <UserGoals promise={fetchGoalsPromise} />
     </>
   );
