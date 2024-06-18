@@ -1,0 +1,16 @@
+{
+  "name": "01-data-fetching-delay",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.0.0-canary.35",
+    "react": "^19.0.0-rc-fb9a90fa48-20240614",
+    "react-dom": "^19.0.0-rc-fb9a90fa48-20240614"
+  }
+}
