@@ -2,8 +2,13 @@ import { createPortal } from 'react-dom';
 
 import classes from './Cart.module.css';
 
-function Cart({ onClose, items }) {
+function Cart({ onClear, onClose, items }) {
   const total = items.reduce((prevVal, item) => prevVal + item.price, 0);
+
+  function handleBuyClick() {
+    onClear();
+    onClose();
+  }
 
   return createPortal(
     <>
@@ -20,7 +25,7 @@ function Cart({ onClose, items }) {
         <p className={classes.total}>Total: ${total}</p>
         <div className={classes.actions}>
           <button onClick={onClose}>Close</button>
-          <button onClick={onClose}>Buy</button>
+          <button onClick={handleBuyClick}>Buy</button>
         </div>
       </aside>
     </>,

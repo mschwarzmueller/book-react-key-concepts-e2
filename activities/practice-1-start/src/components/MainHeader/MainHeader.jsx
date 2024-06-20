@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Cart from '../Cart/Cart.jsx';
 import classes from './MainHeader.module.css';
 
-function MainHeader({ cartItems }) {
+function MainHeader({ onClearCart, cartItems }) {
   const [modalIsOpen, setModalIsOpen] = useState();
 
   function handleOpenCartModal() {
@@ -22,7 +22,13 @@ function MainHeader({ cartItems }) {
         <h1>StateEvents Shop</h1>
         <button onClick={handleOpenCartModal}>Cart ({numCartItems})</button>
       </header>
-      {modalIsOpen && <Cart onClose={handleCloseCartModal} items={cartItems} />}
+      {modalIsOpen && (
+        <Cart
+          onClear={onClearCart}
+          onClose={handleCloseCartModal}
+          items={cartItems}
+        />
+      )}
     </>
   );
 }

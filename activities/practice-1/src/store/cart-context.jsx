@@ -4,6 +4,7 @@ const CartContext = createContext({
   items: [],
   addItem: () => {},
   removeItem: () => {},
+  clearCart: () => {},
 });
 
 export function CartContextProvider({ children }) {
@@ -17,11 +18,16 @@ export function CartContextProvider({ children }) {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
   }
 
+  function handleClearCart() {
+    setCartItems([]);
+  }
+
   const contextVal = {
     items: cartItems,
     addItem: handleAddItem,
-    removeItem: handleRemoveItem
-  }
+    removeItem: handleRemoveItem,
+    clearCart: handleClearCart,
+  };
 
   return <CartContext value={contextVal}>{children}</CartContext>;
 }

@@ -14,9 +14,13 @@ function App() {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
   }
 
+  function handleClearCart() {
+    setCartItems([]);
+  }
+
   return (
     <>
-      <MainHeader cartItems={cartItems} />
+      <MainHeader onClearCart={handleClearCart} cartItems={cartItems} />
       <main>
         <Events
           onAddItemToCart={handleAddItem}

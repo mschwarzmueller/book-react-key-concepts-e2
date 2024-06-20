@@ -12,6 +12,11 @@ function Cart({ onClose }) {
     0
   );
 
+  function handleBuyClick() {
+    cartCtx.clearCart();
+    onClose()
+  }
+
   return createPortal(
     <>
       <div className={classes.backdrop} onClick={onClose} />
@@ -27,7 +32,7 @@ function Cart({ onClose }) {
         <p className={classes.total}>Total: ${total}</p>
         <div className={classes.actions}>
           <button onClick={onClose}>Close</button>
-          <button onClick={onClose}>Buy</button>
+          <button onClick={handleBuyClick}>Buy</button>
         </div>
       </aside>
     </>,
