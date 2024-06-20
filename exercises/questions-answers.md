@@ -10,7 +10,7 @@ When a component function is executed, the real DOM is not affected at all initi
 
 # 3. Which components are great candidates for the `memo()` function? Which components are bad candidates?
 
-Components high up in the component tree or at the beginning of deeply nested component tree branches are great candidates. They are great candidates because by prevent unnecessary executions of a single component (the one wrapped with `memo()`), a lot of component re-evaluations further down the component tree can be prevented.
+Components high up in the component tree or at the beginning of deeply nested component tree branches are great candidates. They are great candidates because by preventing unnecessary executions of a single component (the one wrapped with `memo()`), a lot of component re-evaluations further down the component tree can be prevented.
 
 Bad candidates are simple components which wouldn't be too compute-intensive to re-evaluate or components that will have to change a lot anyways.
 
