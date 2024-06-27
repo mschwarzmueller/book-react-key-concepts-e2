@@ -2,7 +2,7 @@
 
 It's very common to fetch data as a new page is loaded. Similarily, it's very common to change the page after committing some action (e.g., after sending a request). Hence it makes sense to combine these tasks with routing. 
 
-With React Router, you can load data right before a page is rendered and navigate to a different route after an action completed.
+With React Router, you can load data right before a page is rendered and navigate to a different route after an action is completed.
 
 # 2. What’s the purpose of `loader()` functions?
 
@@ -16,7 +16,7 @@ With React Router, you can load data right before a page is rendered and navigat
 
 Inside the `action()` function you then typically handle the form submission by validating the user input and/ or sending a HTTP request (with the submitted data) to a backend API.
 
-`action()` functions can return any data of your choice. If you return a redirect response (e.g., created via React Router's `redirect()` function) React Router will navigate to the new page once the action completed.
+`action()` functions can return any data of your choice. If you return a redirect response (e.g., created via React Router's `redirect()` function) React Router will navigate to the new page once the action is completed.
 
 # 4. What’s the difference between `<Form>` and `<form>`?
 
