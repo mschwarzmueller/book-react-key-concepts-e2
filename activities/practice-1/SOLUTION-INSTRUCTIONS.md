@@ -2,7 +2,7 @@
 
 2. Copy the `data.js` file from the finished project from activity 13.1 into a newly added `lib/` folder in the Next.js project.
 
-3. Update the `app/products/page.js` file to import and use the migrated `data.js` file. Return the same JSX code as used in activity 13.1.
+3. Update the `app/products/page.js` file to import and use the migrated `products.js` file. Return the same JSX code as used in activity 13.1.
 
    Also import and use the `Link` component provided by Next.js. It should look like this:
 
