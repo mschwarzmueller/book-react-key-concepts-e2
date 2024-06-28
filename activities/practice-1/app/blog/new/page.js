@@ -1,6 +1,6 @@
 'use client';
 
-import { storePost } from '@/actions/blog-posts';
+import { storePost } from '../../../actions/blog-posts';
 import { useActionState } from 'react';
 
 export default function NewPostPage() {
