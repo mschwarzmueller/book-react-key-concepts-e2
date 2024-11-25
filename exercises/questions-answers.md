@@ -30,6 +30,6 @@ Both `useSubmit()` and `useFetcher()` can be used to trigger `action()` function
 
 The difference is that `useFetcher()` provides you with an object that can also be used for loading data (i.e., for triggering `loader()` functions) **and** that `useFetcher()` does not require a route transition. Instead, you can trigger a `loader()` or `action()` without changing the page.
 
-# 6. What’s the idea behind `defer()`?
+# 6. What’s the idea behind returning promises instead of awaiting them in a loader()?
 
-`defer()` allows you to start rendering a route's page component without waiting for all of the required data first. This can be useful when fetching slow data.
+Returning promises (without awaiting them in a `loader()`) allows you to start rendering a route's page component without waiting for all of the required data first. This can be useful when fetching slow data.

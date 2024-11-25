@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, useLoaderData, defer, Await } from 'react-router-dom';
+import { Outlet, useLoaderData, Await } from 'react-router-dom';
 
 import PostsList from '../components/PostsList.jsx';
 import { wait } from '../util/time-util.js';
@@ -36,7 +36,7 @@ async function getPosts() {
 }
 
 export async function loader() {
-  return defer({
+  return {
     posts: getPosts(),
-  });
+  };
 }
