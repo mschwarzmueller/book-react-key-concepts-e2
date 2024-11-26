@@ -204,7 +204,7 @@
     import Link from 'next/link';
 
     export default async function PostDetailPage({ params }) {
-      const { postId } = params;
+      const { postId } = await params;
       const storedPosts = await fs.readFile('data/posts.json', 'utf-8');
       const posts = JSON.parse(storedPosts);
       const post = posts.find((post) => post.id === Number(postId));
