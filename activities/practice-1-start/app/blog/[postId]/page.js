@@ -11,7 +11,7 @@ async function fetchPost(id) {
 }
 
 export default async function PostDetailPage({ params }) {
-  const { postId } = params;
+  const { postId } = await params;
   const post = await fetchPost(postId);
 
   const formattedDate = new Date(post.createdAt).toLocaleDateString('en-US', {

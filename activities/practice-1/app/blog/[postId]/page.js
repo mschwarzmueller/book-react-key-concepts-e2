@@ -12,8 +12,8 @@ async function fetchPost(id) {
   return post;
 }
 
-export default function PostDetailPage({ params }) {
-  const { postId } = params;
+export default async function PostDetailPage({ params }) {
+  const { postId } = await params;
   const fetchPostPromise = fetchPost(postId);
 
   return (
