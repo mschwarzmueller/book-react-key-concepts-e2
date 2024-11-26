@@ -36,8 +36,8 @@
    ```jsx
    import products from '../../lib/products';
 
-   export default function ProductDetailPage({ params }) {
-     const prodId = params.productId;
+   export default async function ProductDetailPage({ params }) {
+     const prodId = (await params).productId;
      const product = products.find((product) => product.id === prodId);
 
      return (

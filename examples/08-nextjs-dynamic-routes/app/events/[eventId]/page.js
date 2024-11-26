@@ -1,7 +1,7 @@
 import { getEventById } from '@/lib/events';
 
-export default function EventDetailsPage({ params }) {
-  const { eventId } = params;
+export default async function EventDetailsPage({ params }) {
+  const { eventId } = await params;
   const event = getEventById(eventId);
 
   return (
