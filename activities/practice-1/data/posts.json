@@ -1,14 +1,1 @@
-[
-  {
-    "id": 1718372450082,
-    "createdAt": "2024-06-14T13:40:50.082Z",
-    "title": "React is amazing!",
-    "body": "It definitely has its complex parts, but overall it's great!"
-  },
-  {
-    "id": 1718372521642,
-    "createdAt": "2024-06-14T13:42:01.642Z",
-    "title": "RSC & Server Actions Overview",
-    "body": "Both are amazing concepts that simplify the process of building fullstack applications. Their setup is not trivial though."
-  }
-]
+[{"id":1718372450082,"createdAt":"2024-06-14T13:40:50.082Z","title":"React is amazing!","body":"It definitely has its complex parts, but overall it's great!"},{"id":1718372521642,"createdAt":"2024-06-14T13:42:01.642Z","title":"RSC & Server Actions Overview","body":"Both are amazing concepts that simplify the process of building fullstack applications. Their setup is not trivial though."}]
