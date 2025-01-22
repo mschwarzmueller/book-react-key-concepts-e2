@@ -14,6 +14,6 @@ The props are passed as an argument to your component functions by React - autom
 
 # 4. Which options exist for passing (multiple) props into components?
 
-When passing multiple props, you can either provide mutiple attributes (i.e. many key-value pairs) and / or group prop values together into an object or array and pass that object / array as a single attribute to a component.
+When passing multiple props, you can either provide multiple attributes (i.e. many key-value pairs) and / or group prop values together into an object or array and pass that object / array as a single attribute to a component.
 
 Inside the component function, you can also use "object destructuring" to pull prop values out of the received "props" object.
