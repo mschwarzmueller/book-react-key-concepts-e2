@@ -7,7 +7,7 @@ Conditional content is content that is only rendered if certain conditions are m
 - With help of `if` statements (set a variable to different values for different conditions)
 - With help of ternary expressions (set a variable to different values for different conditions)
 
-You can also "abuse" the JavaScript logical "and" operator (`&&`). Ternary epxressions and the `&&` operator can be used to store different data in variables **or** to "inline", directly inside of a component's JSX code.
+You can also "abuse" the JavaScript logical "and" operator (`&&`). Ternary expressions and the `&&` operator can be used to store different data in variables **or** to "inline", directly inside of a component's JSX code.
 
 # 3. Which elegant approach can be used to define element tags conditionally?
 
